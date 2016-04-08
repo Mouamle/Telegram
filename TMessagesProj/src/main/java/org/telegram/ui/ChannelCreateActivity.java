@@ -470,7 +470,7 @@ public class ChannelCreateActivity extends BaseFragment implements NotificationC
             helpTextView.setText(LocaleController.getString("DescriptionInfo", R.string.DescriptionInfo));
             linearLayout.addView(helpTextView, LayoutHelper.createLinear(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT, 24, 10, 24, 20));
 
-            /*helpTextView = new TextView(context);
+            helpTextView = new TextView(context);
             helpTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 15);
             helpTextView.setTextColor(0xff3d93d5);
             helpTextView.setGravity(LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT);
@@ -485,7 +485,7 @@ public class ChannelCreateActivity extends BaseFragment implements NotificationC
                     builder.setPositiveButton(LocaleController.getString("Close", R.string.Close), null);
                     showDialog(builder.create());
                 }
-            });*/
+            });
         } else if (currentStep == 1) {
             actionBar.setTitle(LocaleController.getString("ChannelSettings", R.string.ChannelSettings));
             fragmentView.setBackgroundColor(0xfff0f0f0);
